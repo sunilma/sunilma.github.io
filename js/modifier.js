@@ -191,7 +191,6 @@ $(document).ready(function(){
 
 	// getting form data
 	$("form").submit(function(event){
-		event.preventDefault();
 		var inputs = $(this).serializeArray();
 		var myString = "Hi, " + inputs[0].value + " " + inputs[1].value + "<br />";
 		myString += "Email: " + inputs[3].value + "<br />";
