@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Sunil's Portfolio Page">
+	<meta name="keywords" content="sunil, portfolio, cv, jobs, search, student, programming, coder, trainee">
+	<meta name="author" content="Sunil Maharjan">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+	<!-- custom style page -->
+	<link rel="stylesheet" href="styles/style.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/modifier.js"></script>
+	<title>Portfolio</title>
+</head>
+<body>
+
+	<div id="clockbox"></div> <!-- clock displayed on the bottom right of the browser -->
+	
+		<nav class="navbar navbar-fixed-top" >
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+					Sunil Maharjan</a>
+				</div> <!-- navbar header -->
+
+				<ul class="nav navbar-nav navbar-right">
+					<li  class="active"><a href="#about">About</a></li>
+					<li><a href="#project">Projects</a></li>
+					<li><a href="#skill">Skills</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div> <!-- container -->
+		</nav>
+	
+
+		<!-- page wrapper -->
+		<div class="page">
+
+			<!-- about page -->
+			<div id="about">
+				<div class="col-md-6">
+					<div class="person">
+						<h2>Hi,</h2>
+						<p>I am Sunil Maharjan. I am a Full Stack Web Developer. I have extensive knowledge of programming languages such as HTML5, CSS3, Javascript,react, redux, nodeJS, Jquery to name a few.</p>
+						<hr>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="pic">
+						<img src="profile.jpg">
+					</div>
+				</div>
+			</div> <!-- about page ends here -->
+
+			<!-- project page -->
+			<div id="project">
+				<h2>My Projects</h2>
+				<hr>
+				<div class="row" id="myprojects"></div>
+			</div> <!-- project page ends here -->
+
+
+			<!-- skill page -->
+			<div id="skill">
+				<h2>SKILLS</h2>
+				<hr>
+				<p>Programming skills</p>
+				<div class="row" id="myskills" >			
+				</div>
+
+			</div> <!-- skills page ends here -->
+
+			<div id="contact">
+				<h2>CONTACT ME</h2>
+				<hr>
+				<div class="col-md-8">
+				<form class="form-horizontal" id="myForm" >
+		  			<div class="form-group">
+		    			<label for="fname" class="col-sm-2 control-label">First Name</label>
+		    			<div class="col-sm-8">
+		     				<input type="text" class="form-control" name="fname" id="fname" placeholder="Enter First Name" maxlength="25" required="required" />
+		     			</div>
+		     		</div>
+		     		<div class="form-group">
+		    			<label for="lname" class="col-sm-2 control-label">Last Name</label>
+		    			<div class="col-sm-8">
+		     				<input type="text" class="form-control" name="lname" id="lname" placeholder="Enter Last Name" maxlength="25" required="required" />
+		     			</div>
+		     		</div>
+		     		<div class="form-group">
+		    			<label for="gender" class="col-sm-2 control-label">Gender</label>
+		    			<div class="col-sm-8">
+		     				<select class="form-control" name="gender" id="gender" required="required">
+		     					<option></option>
+		     					<option value="male">Male</option>
+		     					<option value="female">Female</option>
+		     				</select>
+		     			</div>
+		     		</div>
+		     		<div class="form-group">
+		    			<label for="email" class="col-sm-2 control-label">Email</label>
+		    		<div class="col-sm-8">
+		     			<input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" maxlength="50" required="required" />
+		     		</div>
+		     		</div>
+		     		<div class="form-group">
+		    			<label for="web_address" class="col-sm-2 control-label">Website Address</label>
+		    		<div class="col-sm-8">
+		     			<input type="url" class="form-control" name="web_address" id="web_address" placeholder="Enter Website Address" maxlength="50" required="required" />
+		     		</div>
+		     		</div>
+		     		<div class="form-group">
+		    			<label for="comment" class="col-sm-2 control-label">Comment</label>
+			    		<div class="col-sm-8">
+			    		<textarea class="form-control" rows="3" name="comment" id="comment" placeholder="Enter Comment" maxlength="255" required="required" ></textarea>
+		     		</div>
+		     		</div>
+		     		<div class="form-group">
+		    		<div class="col-sm-offset-2 col-sm-10">
+		      			<button type="submit" class="btn btn-default">Submit</button>
+		      			<button type="button" class="btn btn-danger" onclick="resetForm()">Reset</button>
+		    		</div>
+		  			</div>
+		     	</form>
+		     	</div>
+		    
+			
+				<div class="msg col-md-4" id="form_data">
+				</div>
+			</div>
+
+
+
+
+
+			
+		</div>
+
+			<footer>
+			<ul class="list-inline pull-right">
+				<li>
+					<a href="https://www.linkedin.com/in/sunilma/" target="_blank" class="button social">
+						<span class="fa-stack fa-lg">
+			  			<i class="fa fa-circle-thin fa-stack-2x"></i>
+			  			<i class="fa fa-linkedin fa-stack-1x"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/sunilma" target="_blank" class="button social">
+						<span class="fa-stack fa-lg">
+				  			<i class="fa fa-circle-thin fa-stack-2x"></i>
+				  			<i class="fa fa-github fa-stack-1x"></i>
+			  			</span>
+					</a>
+				</li>
+			</ul>
+			
+			<div class="copyright">
+				<h3>Sunil &copy 2020. All Rights Reserved.</h3>
+			</div>
+			
+			</footer>
+
+
+</body>
+</html>

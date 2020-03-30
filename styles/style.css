@@ -1,0 +1,215 @@
+/*importing google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+	font-size: 12px;
+	width: 100%;
+	height: 100%;
+	background-color: #708090;
+	font-family: 'Roboto Condensed', sans-serif;;
+	position: relative;
+	overflow-y: scroll;
+
+	background-image: url('../images/background/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#clockbox {    /*displaying clock in the browser*/
+	font-size: 3em;
+	color: #000000;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding-right: 20px;
+	z-index: 10;
+}
+
+h2 {
+	font-size: 3.5em;
+	font-weight: bold;
+	padding-top: 90px;
+	text-align: center;
+}
+
+.page {
+	width: 100vw;
+	margin: 0 auto;
+	color: white;
+}
+
+/*navigation bar*/
+
+nav {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 2.5em;
+	padding: 20px;
+	background-color: #008000;
+}
+
+nav ul>li>a { color: white; }
+nav ul>li>a:hover { color: #B8860B; }
+
+.active { background-color: #000000; }
+
+.navbar-brand {
+	font-weight: bold;
+	color: #CD853F;
+	font-size: 1.5em;
+}
+
+
+/*styling for about page*/
+
+#about {
+	width: 100vw;
+	background: rgb(204, 255, 179, 0.3);
+	padding: 10% 4%;
+	overflow: hidden;
+}
+
+#about h2 { text-align: left; font-size: 2em; }
+
+#about .person {
+	color: white;
+	font-size: 2em;
+	padding-top: 100px;
+}
+
+#about .pic {
+	padding: 20px;
+}
+
+#about .pic img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+
+/*styling for project page*/
+#project{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	padding: 60px 10px;
+
+	background-image: url('../images//background/background1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#project .fader {
+	 height: 500px;
+	 margin: 30px 0;
+ }
+
+
+#project img {
+	width: 100%;
+	height: 250px;
+	margin-bottom: 20px;
+}
+
+#project img:hover {
+	border: 4px solid blue;
+	opacity: .6;
+}
+
+#project h3 { color: white; font-size: 2em; text-transform: uppercase; padding: 10px; }
+
+
+/* button styling*/
+.fader .btn {
+	box-shadow: 4px 6px 6px 1px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.fader .btn:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.fader .btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+/*styling for skill page*/
+
+#skill {
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 50px;
+	background: rgb(204, 255, 179, 0.3);	
+}
+
+#skill p {font-size: 2em; padding-bottom: 100px ;}
+
+#skill h3 { font-size: 2em;}
+
+.skill-section { 
+	padding: 40px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+#contact h2 {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+
+#contact {
+	background-image: url('../images//background/background1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	overflow: hidden;
+	padding: 5%;
+}
+
+#contact h2 {
+	text-align: center;
+}
+
+#contact .msg {
+	color: white;
+	font-size: 2em;
+}
+
+footer {
+	width: 100vw;
+	overflow: hidden;
+	background-color: #d3d3d3;
+	padding: 20px 10%;
+
+}
+
+.copyright h3 {
+	text-align: center;
+	font-weight: bold;
+}
+
+
